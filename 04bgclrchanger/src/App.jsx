@@ -12,15 +12,21 @@ function App() {
   // }
 
   return (
-   <div className='w-full h-screen duration-200' style={{backgroundColor: color}}>
+   <div className='w-full h-screen duration-500' style={{backgroundColor: color}}>
     <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2 ">
-      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl ">
+      <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-neutral-100 px-3 py-2 rounded-3xl ">
         <button onClick={() => setColor("red")} 
-        className='outline-none px-4 py-1 rounded-full shadow-lg text-black '>Red</button>
+        className='outline-none px-4 py-1 rounded-full shadow-lg text-black bg-red-600'>Red</button>
         <button onClick={() => setColor("Blue")} 
-        className='outline-none px-4 py-1 rounded-full shadow-lg text-black '>Blue</button>
+        className='outline-none px-4 py-1 rounded-full shadow-lg text-black bg-blue-700'>Blue</button>
         <button onClick={() => setColor("Green")} 
-        className='outline-none px-4 py-1 rounded-full shadow-lg text-black '>Green</button>
+        className='outline-none px-4 py-1 rounded-full shadow-lg text-black bg-green-600'>Green</button>
+        <button onClick={() => setColor("orange")} 
+        className='outline-none px-4 py-1 rounded-full shadow-lg text-black bg-orange-400 '>Orange</button>
+        <button onClick={() => setColor("purple")} 
+        className='outline-none px-4 py-1 rounded-full shadow-lg text-black bg-purple-500'>Pruple</button>
+        <button onClick={() => setColor("yellow")} 
+        className='outline-none px-4 py-1 rounded-full shadow-lg text-black bg-amber-400 '>Yellow</button>
       </div>
     </div>
    </div>
